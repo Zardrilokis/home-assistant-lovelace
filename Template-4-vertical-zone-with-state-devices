@@ -1,0 +1,92 @@
+type: panel
+path: lamps-state
+icon: mdi:lamps
+title: Lamps State
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: "on"
+            card:
+              type: entity
+              entity: 
+              state_color: true
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: "on"
+            card:
+              type: entity
+              entity: 
+              state_color: true
+        title: Allumer
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: "off"
+            card:
+              type: entity
+              entity: 
+              state_color: true
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: "off"
+            card:
+              type: entity
+              entity: 
+              state_color: true
+        title: Eteint
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: unknown
+            card:
+              type: entity
+              entity: 
+              state_color: true
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: unknown
+            card:
+              type: entity
+              entity: 
+              state_color: true
+        title: Inconnu
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: unavailable
+            card:
+              type: entity
+              entity: 
+              state_color: true
+          - type: conditional
+            conditions:
+              - condition: state
+                entity: 
+                state: unavailable
+            card:
+              type: entity
+              entity: 
+              state_color: true
+        title: Indisponible
+    title: Lights State
