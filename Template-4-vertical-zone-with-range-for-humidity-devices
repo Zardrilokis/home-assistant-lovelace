@@ -1,0 +1,100 @@
+type: panel
+title: Humidity - Percentage
+path: humidity-percentage-statistic
+icon: mdi:water-percent
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 0
+                below: 26
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 0
+                below: 26
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 0% et 25%
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 25
+                below: 51
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 25
+                below: 51
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 26% et 50%
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 50
+                below: 76
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 50
+                below: 76
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 51% et 75%
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 76
+                below: 100.1
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 76
+                below: 100.1
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 76% et 100%
+    title: Humidity Statistics
