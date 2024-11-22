@@ -1,0 +1,119 @@
+type: panel
+path: Temperature-statistic
+title: Temperature - Statistic
+icon: mdi:thermometer
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                below: 0
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                below: 0
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Inférieur à 0
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: -1
+                below: 11
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: -1
+                below: 11
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 0° et 10°
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 11
+                below: 21
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 11
+                below: 21
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 11° et 20°
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 21
+                below: 31
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 21
+                below: 31
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Entre 21° et 30°
+      - type: vertical-stack
+        cards:
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 31
+            card:
+              type: entity
+              state_color: true
+              entity: 
+          - type: conditional
+            conditions:
+              - condition: numeric_state
+                entity: 
+                above: 31
+            card:
+              type: entity
+              state_color: true
+              entity: 
+        title: Supérieur à 30°
+    title: Temperature Statistics
